@@ -1,0 +1,160 @@
+/* Barra de Navegacion */
+
+.navbar {
+  padding: 1rem;
+  background-color: #333333;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Bungee Shade', cursive;
+  color: black;
+}
+
+.seccion-oscura {
+  color: azure;
+  background-color: #1b1b32;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: #4d5e70 ;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0px;
+  font-family: 'Bungee Shade', cursive;
+  color: white;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color:azure;
+}
+
+/* Seccion hero */
+
+.hero {
+  background-color: #4d5e70;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-perfil {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  outline: solid #FF801B 3rem;
+  border: solid #333333 1.5rem;
+  margin: 60px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #2e2424
+}
+
+/* Sobre mi */
+
+.fondo-titulos {
+  height: 500px;
+  padding: 15px;
+}
+
+.fondo-titulos .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color:azure;
+  background-color: #1b1b32;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+/* Badges */
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.badges {
+  margin: 5px;
+}
+
+.text-bg-tec {
+  background-color: #FF801B;
+}
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  padding: 15px 20px;
+  background: #333333;
+  border-radius:50%;
+  color: #FF801B;
+}
+
+/* Adaptable (Responsive) */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 750px;
+  }
+}
